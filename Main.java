@@ -17,5 +17,6 @@ public class Main {
         //commit
         System.out.println("commited");
         System.out.println("teste");
+        System.out.println("teste2");
     }
 }
