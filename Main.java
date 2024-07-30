@@ -1,4 +1,4 @@
-public class main {
+public class Main {
     public static void main(String[] args) {
         System.out.println("salve");
 
@@ -13,5 +13,9 @@ public class main {
             count++;
             System.out.println(count);
         }
+
+        //commit
+        System.out.println("commited");
+        System.out.println("teste");
     }
 }
