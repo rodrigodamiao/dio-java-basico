@@ -22,6 +22,9 @@ public class Main {
         String segundoNome = "Damião";
         String nomeCompleto = Nomes.nomeCompleto(primeiroNome,segundoNome);
         System.out.println(nomeCompleto);
+
+        Usuarios usuarios = new Usuarios();
+        usuarios.dadosUsuario();
     }
 }
 
@@ -43,5 +46,18 @@ class Calculadora{
 class Nomes{
     public static String nomeCompleto(String primeiroNome, String segundoNome){
         return primeiroNome.concat(" ").concat(segundoNome);
+    }
+}
+
+class Usuarios{
+
+    String[] emails = {"usuario1@gmail.com", "usuario2@gmail.com", "usuario3@gmail.com"};
+    String[] nomes = {"Rodrigo", "Bruno", "Vinicius"};
+    String[] ids = {"1","2","3"};
+
+    public  void dadosUsuario(){
+        for(int i = 0; i<ids.length;i++){
+            System.out.println("id:"+ids[i]+" / "+nomes[i]+" / "+emails[i]);
+        }
     }
 }
