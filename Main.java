@@ -25,7 +25,49 @@ public class Main {
 
         Usuarios usuarios = new Usuarios();
         usuarios.dadosUsuario();
+
+        int numero = 5;
+        if(numero > 0){
+            System.out.println("Positivo: " + numero);
+        }else{
+            System.out.println("Negativo: " + numero);
+        }
+
+        int valor = 5;
+        System.out.println(--valor);
+        System.out.println(valor--);
+        System.out.println(valor);
+
+        int a,b;
+        a=5;
+        b=5;
+
+        String resultado = a==b?"verdadeiro":"falso";
+        System.out.println(resultado);
+
+        String nome1 = "Rodrigo";
+        String nome2 = new String("Rodrigo");
+        System.out.println(nome1==nome2); // false
+        System.out.println(nome1.equals(nome2));// true
+
+        System.out.println(somar2(5,5));
+
+        String[] alunos = Alunos.alunos2;
+        Alunos.listaAlunos(alunos);
     }
+
+    public static int somar2(int num1, int num2){
+        return num1+num2;
+    }
+    public static void imprimir2(String texto) {
+        System.out.println(texto);
+    }
+    public static String imprimir3(String texto){
+        System.out.println(texto);
+        return texto;
+    }
+
+
 }
 
 class Calculadora{
@@ -61,3 +103,15 @@ class Usuarios{
         }
     }
 }
+
+class Alunos{
+    public static String[] alunos = {"Rodrigo", "Bruno", "Felipe", "Gabriela"};
+    public static String[] alunos2 = {"Rodrigo2", "Bruno2", "Felipe2", "Gabriela2"};
+
+    public static void listaAlunos(String[] alunos){
+        for(String aluno : alunos){
+            System.out.println("Nome do aluno: " + aluno);
+        }
+    }
+}
+
